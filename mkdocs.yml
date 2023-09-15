@@ -6,3 +6,6 @@ nav:
   - 'User guide':
     - 'Writing docs': 'writing.md'
     - 'Styling docs': 'styling.md'
+
+theme:
+  name: material
