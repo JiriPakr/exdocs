@@ -7,3 +7,4 @@
 * `style5` - some other style
 * `style6` - some other style
 * `style7` - some other style
+* `style8` - some other style
