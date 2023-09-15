@@ -20,12 +20,8 @@ jobs:
       uses: actions/setup-python@v3
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip setuptools
+        python -m pip install --upgrade
         python -m pip install -r requirements.txt
         git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
     - name: Publish docs
-      run: |
-        git remote add gh-token "https://github.com/purrbot-site/Docs.git"
-        git fetch gh-token && git fetch gh-token gh-pages:gh-pages
-        python -m mkdocs gh-deploy --clean -m "Deploying Docs to GitHub Pages (${GITHUB_SHA:0:7})" --remote-name gh-token
-        git push gh-token gh-pages
+      run: mkdocs gh-deploy
