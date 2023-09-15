@@ -9,7 +9,7 @@ on: [push]
 
 permissions:
   contents: read
-  pages: read|write
+  pages: write
 
 jobs:
   build:
