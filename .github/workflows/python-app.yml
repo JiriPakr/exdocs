@@ -7,9 +7,9 @@ on: [push]
   # push:
   #   branches: [ $default-branch ]
 
-permissions:
-  contents: read
-  pages: write
+permissions: read-all
+  # contents: read
+  # pages: write
 
 jobs:
   build:
